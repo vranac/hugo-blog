@@ -2,13 +2,13 @@
 title: "How was your weekend?"
 date: 2013-09-15 17:09:00+00:00
 categories:
-    - conference
-    - talk
+    - conferences
+    - speaking
     - vagrant
     - puppet
 tags:
-    - conference
-    - talk
+    - conferences
+    - speaking
     - vagrant
     - puppet
 comments: true
