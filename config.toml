@@ -9,6 +9,8 @@ title = "The Joy of Hex"
 # number of blog posts displayed in each page
 paginate = 6
 
+MetaDataFormat = "yaml"
+
 # change the article links
 [permalinks]
 post = ":year/:month/:slug/"
