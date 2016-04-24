@@ -72,7 +72,7 @@ post = ":year/:month/:slug/"
 
   # pygment options can be added here
   # Hugo supports these pygments options: style, encoding, noclasses, hl_lines, linenos - for example:
-  # pygmentsoptions = "linenos=true"
+  # pygmentsoptions = "linenos=true, hl_lines=true"
 
   github = "https://github.com/vranac/"
   bitbucket = ""
