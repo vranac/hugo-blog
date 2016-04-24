@@ -84,6 +84,9 @@ post = ":year/:month/:slug/"
   youtube = ""
   facebook = ""
 
+  # search enginer paramete in the navigation menu
+  search_engine_url = "https://www.google.com/search"
+
 [[menu.main]]
   Name = "Blog"
   URL = "/"
