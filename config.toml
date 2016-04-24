@@ -88,3 +88,8 @@ post = ":year/:month/:slug/"
   Name = "Blog"
   URL = "/"
   weight = -10
+
+[[menu.main]]
+  Name = "Archive"
+  URL = "/archive"
+  weight = -5
