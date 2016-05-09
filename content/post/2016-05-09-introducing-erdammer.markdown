@@ -1,6 +1,5 @@
 ---
 date: 2016-05-09T22:08:27+02:00
-draft: true
 title: Introducing ERDammer
 categories:
     - Databases
