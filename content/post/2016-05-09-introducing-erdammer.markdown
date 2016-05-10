@@ -12,7 +12,8 @@ tags:
 ---
 
 Lately I have been looking into tools that can help us generate Entity Relationship
-Diagrams from database schema, and to create some kind of editable format
+Diagrams from database schema of any RDBMS (provided there is a driver),
+and to create some kind of editable format
 that can be then integrated with rest of the documentation and transformed by
 Sphinx to html.
 <!--more-->
