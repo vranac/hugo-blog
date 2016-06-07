@@ -38,7 +38,9 @@ Awesome, now that you have an oauth token, and you could paste it into your Trav
 and commit it, and ...
 
 Well, you can't, as GitHub is actively scanning the repos for oauth tokens, and if it detects one,
-it gets disabled, so now we are back to square two.
+that has any permissions set, it gets disabled, so now we are back to square two
+(on other hand if you create a token with no permissions, they are great for OSS projects and
+are left alone by GitHub).
 
 Travis provides a nice solution to this problem called Encrypted Variables.
 As great as this sounds, the question of "How does one encrypts a variable?" remains.
