@@ -1,6 +1,6 @@
 ---
 date: 2016-05-14T15:35:56+02:00
-title: Connecting JetBrains DataGrip to redshift
+title: Connecting JetBrains DataGrip to Redshift
 categories:
     - Databases
     - Tools
