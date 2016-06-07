@@ -34,7 +34,7 @@ Well this kind of sucks, so what can be done?
 For starters you can, and should, generate the github personal access token,
 explained nicely [here][gh-oauth]
 
-Awesome, now that you have an oauth token, and you could paste it into your travis config,
+Awesome, now that you have an oauth token, and you could paste it into your Travis CI config,
 and commit it, and ...
 
 Well, you can't, as GitHub is actively scanning the repos for oauth tokens, and if it detects one,
@@ -54,9 +54,9 @@ ruby 2.0.0p648 (2015-12-16 revision 53162) [universal.x86_64-darwin15]
 
 If you do not have Ruby installed, google for solution related to your OS.
 
-Then you need to install the travis gem, at the time of writing the version is `1.8.2`
+Then you need to install the Travis CI gem, at the time of writing the version is `1.8.2`
 
-To find out which is the latest version of travis gem available you need to run the following comamnd
+To find out which is the latest version of Travis CI gem available you need to run the following comamnd
 
 {{< codecaption lang="bash" >}}
 $ gem search travis
@@ -85,7 +85,7 @@ You may get asked about shell completion,
 Shell completion not installed. Would you like to install it now? |y|
 {{< /codecaption >}}
 
-Answer to your preference, and you will finally see the travis gem version
+Answer to your preference, and you will finally see the Travis CI gem version
 {{< codecaption lang="bash" >}}
 Shell completion not installed. Would you like to install it now? |y|
 1.8.2
@@ -130,7 +130,7 @@ Please add the following to your .travis.yml file:
 {{< /codecaption >}}
 
 Now, if you are a lazy person, you can add `--add` to the end of the command
-and travis gem will add what is needed to your travis configuration for the repo.
+and Travis CI gem will add what is needed to your Travis CI configuration for the repo.
 
 IF you want to encrypt against a different repo, you can add the `-r` or `--repo` switch to
 the command, followed by repo slug(everything in the repo url after `http://www.github.com/`)
@@ -139,7 +139,7 @@ the command, followed by repo slug(everything in the repo url after `http://www.
 $  travis encrypt 'GITHUB_TOKEN=<YOUR_GITHUB_TOKEN>' -r <REPO_SLUG>
 {{< /codecaption >}}
 
-So now that you have your encrypted string, you can add it to your travis config
+So now that you have your encrypted string, you can add it to your Travis CI config
 
 {{< codecaption lang="yaml" >}}
 ...
@@ -158,9 +158,9 @@ install:
 
 Lines 2-4 are your encrypted variable values, do replace
 `<LONG_STRING_OF_ENCRYPTED_CHARACTERS>` with the output of the `travis encrypt` command.
-Now you have the encrypted variable values added to your travis configuration, congratulations.
+Now you have the encrypted variable values added to your Travis CI configuration, congratulations.
 
-On line 7 you will actually be using the GitHub token by adding `"$GITHUB_TOKEN"`, travis
+On line 7 you will actually be using the GitHub token by adding `"$GITHUB_TOKEN"`, Travis CI
 will know that is is a encrypted variable, and will decrypt and replace it.
 
 With all this in place, you can now use `--prefer-dist`, and not have to worry about
