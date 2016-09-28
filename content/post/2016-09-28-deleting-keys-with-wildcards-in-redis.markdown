@@ -22,8 +22,9 @@ You have different data structures, that are efficient and great and all, that a
 and this is where my problem begins.
 
 I have some 100k+ hashes in redis with keys in the form of `yer:key:harry:xxxyyzz`.
-Which means that when I need to purge them, I could just use `yer:key:harry:*` and
-be sure that only those hashes would be purged and not anything else of value.
+Which means that when I need to purge them from the application,
+I could just use `yer:key:harry:*` and be sure that only those hashes
+would be purged and not anything else of value.
 
 So I looked at the [del][redis-docs-del] keyword in redis, and found out it can't
 do wildcards. Isn't that fun...
