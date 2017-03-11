@@ -65,7 +65,7 @@ post = ":year/:month/:slug/"
 
   # if nothing is set, then solarized_light is used
   # other styles can be viewed in [http://pygments.org/](http://pygments.org/)
-  pygmentsstyle = "solarized_light"
+  #pygmentsstyle = "solarized_light"
 
   # highlight shortcode and code fences (```) will be treated similarly
   pygmentscodefences = true
