@@ -1,5 +1,5 @@
 baseurl = "/"
-disablePathToLower = true
+disablePathToLower = false
 languageCode = "en-us"
 theme="hugo-octopress"
 
