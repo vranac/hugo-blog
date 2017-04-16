@@ -45,7 +45,7 @@ post = ":year/:month/:slug/"
 
   # disqus - simply enter your disqus - using the template from https://gohugo.io/extras/comments/ at /hugo-octopress/layouts/partials/disqus.html that disables disqus when running on localhost (if you are testing it offline remember to comment out the if in the template that checks for localhost)
   # the template is injected into the pages in /hugo-octopress/layouts/partials/post-footer.html which is in every post (and not non-post pages like license.html)
-  disqusShortname = ""
+  disqusShortname = "thejoyofhex"
 
   # Google analytics - _internal/googleanalytics.html in injected in hugo-octopress/layouts/partials/header.html
   googleAnalytics = "UA-6284139-6"
