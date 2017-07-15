@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- if you want your own highlight.css -->
-  <!-- 
+  <!--
   {{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ "/css/highlight/" | absURL }}{{ .Site.Params.highlight }}.css">{{ end }}
   -->
 
@@ -33,7 +33,7 @@
   <!-- RSS -->
   {{ $siteTitle := .Site.Title }}
   {{ $authorName := .Site.Author.name }}
-  
+
   <!--
   {{ with .RSSLink }}<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }} &middot; {{ $authorName }}" />{{ end }}
   -->
@@ -51,6 +51,7 @@
   <!-- Google Analytics -->
   {{ template "_internal/google_analytics.html" . }}
 
+  {{ partial "twitter-card" . }}
 </head>
 <body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }}>
 

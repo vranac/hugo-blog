@@ -96,3 +96,9 @@ post = ":year/:month/:slug/"
   Name = "Archive"
   URL = "/archive"
   weight = -5
+
+[twitter]
+  card = "Code4Hire Blog"
+  site = "@vranac"
+  title = "The Joy of Hex"
+  description = "Drunken Monkey Coding Style with a hint of Carlin humor"
