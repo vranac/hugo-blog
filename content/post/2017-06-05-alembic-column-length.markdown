@@ -19,6 +19,8 @@ bite size deltas to tables in our projects for simple and controlled migrations.
 
 And today, I encountered an interesting problem with alembic on a project I am working on.
 
+<!--more-->
+
 Consider the following example
 
 {{< codecaption lang="python" title="models.py" >}}

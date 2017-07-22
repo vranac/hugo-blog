@@ -12,12 +12,11 @@ tags:
     - GitHub
 ---
 
-We are using Travis CI for our projects, and as we are using PHP a lot, and as great
-as composer is, constantly pulling in the full source for dependencies it can become tedious
-when you are constantly building and running tests (yes yes, I know I can limit
-the branches which are run).
-Luckily for us, composer provides a nice `--prefer-dist` option that will download
-the distribution package/zip that can save you a lot of time.
+We are using Travis CI for our projects, and as we are using PHP a lot,
+and as great as composer is, constantly pulling in the full source for dependencies it can become tedious when you are constantly building and running tests (yes yes, I know I can limit the branches which are run).
+Luckily for us, composer provides a nice `--prefer-dist` option that will download the distribution package/zip that can save you a lot of time.
+
+<!--more-->
 
 From the manual:
 

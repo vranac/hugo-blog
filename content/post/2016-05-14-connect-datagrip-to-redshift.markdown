@@ -15,6 +15,8 @@ Last few weeks I have been working with DataGrip, a latest offering from [JetBra
 that is marketed as "Your Swiss Army Knife for Databases and SQL" and in my use case
 it most certainly turned to be true.
 
+<!--more-->
+
 I needed to connect to [Amazon Redshift][redshift], for those of you who do not know,
 Redshift is what happened when Amazon took a PostgreSQL 8.0.2 and mutated it into
 "Amazon Redshift is a fast, fully managed, petabyte-scale data warehouse service

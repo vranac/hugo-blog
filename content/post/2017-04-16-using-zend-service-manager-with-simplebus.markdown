@@ -22,6 +22,8 @@ available event/command busses, I decided to try out the [SimpleBus][simplebus].
 The docs are a bit sparse, they do give you all the necessary information, and
 it is a quick setup.
 
+<!--more-->
+
 We use [Zend Service Manager][zend-service-manager] as DIC and it is fairly
  straight forward to implement it.
 

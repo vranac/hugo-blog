@@ -18,6 +18,8 @@ So, for you who don't know [Redis][redis] is an
 
 Or to put it simply, it is a **Key/Value Store and so much more**
 
+<!--more-->
+
 You have different data structures, that are efficient and great and all, that are at the end of the day identified by their keys,
 and this is where my problem begins.
 

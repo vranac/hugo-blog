@@ -19,6 +19,8 @@ I could just type it out, and the utility would spit out the file in format I ne
 After some search I found this interesting tool called [ERD][erd], it was written
 in Haskell, and it seemed to do just what I wanted.
 
+<!--more-->
+
 But as usual something had to give, and in this case it was the setup on OSX.
 Haskell install was simple, but then installing ERD itself proved to be very
 error prone, and building it from scratch was a long operation, and it required
