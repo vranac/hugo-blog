@@ -1,7 +1,18 @@
 ---
 date: 2017-07-22T09:33:19+02:00
-draft: true
+draft: false
 title: Loading SQL sequentially with doctrine fixtures in Symfony project
+
+categories:
+    - php
+    - doctrine
+    - fixtures
+    - database
+tags:
+    - php
+    - doctrine
+    - fixtures
+    - database
 ---
 
 Most of today applications store and retrieve data of some sorts,
@@ -67,6 +78,8 @@ so be careful.
 
 Lets put together a fixture loader for sql.
 
+It turns out it is rather simple, we need the [Symfony finder][symfony-finder] component.
+
 {{< codecaption lang="php" title="DataFixtures/ORM/Legacy/LoadData.php" >}}
 <?php
 
@@ -104,8 +117,6 @@ class LoadData implements FixtureInterface
     }
 }
 {{< /codecaption >}}
-
-It turns out it is rather simple, we need the Symfony finder component.
 
 In lines 19-23 the following is happening...
 To the instance of the finder, path needs to be supplied,
@@ -261,3 +272,4 @@ where you need.
 [doctrine-data-fixtures]: https://github.com/doctrine/data-fixtures
 [doctrine-fixtures-bundle]: http://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html
 [robertbasic]:https://twitter.com/robertbasic
+[symfony-finder]:https://symfony.com/doc/current/components/finder.html
